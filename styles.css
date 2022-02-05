@@ -61,7 +61,7 @@
   }
   
   .footer button{
-      color: #151b6db2;
+      color: #0346fcbd;
       font-size: 1.1rem;
       border:none;
       background-color: transparent;
@@ -70,11 +70,13 @@
       padding: 0.2rem;
       cursor: pointer;
   }
+
   
   .footer .button-icon {
       width: 40%;
       justify-content: space-around;
       align-items: center;
+      cursor: pointer;
     }
   
     .footer .button-icon button {
@@ -83,6 +85,7 @@
       width: 30px;
       border-radius: 50%;
       font-weight: normal;
+      
     }
   
     .header-standard {
@@ -164,7 +167,7 @@
     left: -10px;
   }
   
-  .iwbd button{
+  .iwbd span{
     font-size: 2.5rem;
     /* bottom: 10px;
     right: 10px; */
@@ -253,10 +256,10 @@
   border-color: none;
 }
 
-.alert-success {
+.alert-success{
   background-color: rgb(108, 172, 118);
-  color: green
-  border-color: green;
+  color: green;
+  border-color: none;
 }
 .alert-warning {
   background-color: rgba(219, 219, 50, 0.527);
@@ -265,7 +268,7 @@
 }
 .alert-danger {
   background-color: rgba(235, 0, 0, 0.651);
-  color: var(--danger-alert-font-color);
+  color: black;
   border-color: none;
 }
 .alert-icon {
