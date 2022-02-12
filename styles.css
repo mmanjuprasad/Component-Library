@@ -274,3 +274,127 @@
 .alert-icon {
   margin-right: 6.25px;
 }
+
+
+/* Button component */
+.container__components-holder{
+  width: 90%;
+  height: fit-content;
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  /* background-color: rgba(101, 150, 27, 0.753) */
+}
+
+.link{
+  box-sizing:border-box;
+  text-decoration:none;
+  padding: 0.5rem 1rem;
+  
+}
+.link-primary{
+  background-color: rgba(0, 88, 189, 0.911);
+  border-radius: 0.5rem;
+  color:white;
+  border: none;
+  
+}
+
+.link-secondary{
+  color: rgb(220, 220, 220);
+  border-radius: 0.5rem;
+  border:1px solid ; 
+  background-color: black;
+}
+
+.link-only{
+  text-decoration:none;
+  padding: 0.5rem 1rem;
+  border:none;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.link-icon{
+  transform: scale(2);
+}
+
+.floating-action {
+  background-color: #F44336;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #F44336;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-size: 36px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: .3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.floating-action:focus {
+  transform: scale(1.1);
+  transform:rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+/* Image component starts here */
+
+.img-circular{
+  width:300px;
+  height:300px;
+  border-radius: 50%;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  transform: scale(0.4);
+  min-height: 100%;
+  object-fit: cover;
+}
+
+
+/* Input component starts here  */
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+
+.input-text-focused {
+  border: 2px solid rgb(0, 68, 255);
+  border-radius: 4px;
+}
+
+.input-text-error{
+  border: 2px solid rgb(255, 51, 0);
+  border-radius: 6px;
+}
+
+.text-error{
+  color: #F44336;
+}
+
+.input-search{
+  background-color: white;
+  background-image: url('./src/searchicon.png') ;
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  transition: width 0.4s ease-in-out;
+}

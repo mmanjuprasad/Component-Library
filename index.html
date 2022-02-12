@@ -9,7 +9,8 @@
     <title>Component Library</title>
 </head>
 <body>
-    <div class="container flex">
+    
+ <div class="container flex">
         <!-- PRIME CARD -->
         <div class="card">
             <div class="card-basic">
@@ -69,7 +70,7 @@
         </div>
 
         <!-- HORIZONTAL CARD  -->
-        <div class="card-container">
+        <div class="container card-container">
             <div class="card-hz">
                 <div class="card-header">
                     <div class="card-header image-fit">
@@ -99,52 +100,115 @@
 
     </div>
 
-    <!-- Badge component starts here -->
-    <div class="container flex">
-        <div class="bwbl position-relative">
-            <div class="badge">10+</div>
-            <button>Inbox</button>
-        </div>
+   
 
-        <div class="iwbd position-relative">
-            <div class="badge">12+</div>
-            <span> <i class="fas fa-home"></i> </span>
+    <!-- Badge component starts here -->
+    <div class="container">
+        <div class="container flex">
+            <div class="bwbl position-relative">
+                <div class="badge">10+</div>
+                <button>Inbox</button>
+            </div>
+    
+            <div class="iwbd position-relative">
+                <div class="badge">12+</div>
+                <span> <i class="fas fa-home"></i> </span>
+            </div>
         </div>
     </div>
+    
 
 
     <!-- Avatar Component start here  -->
-
-    <div class="component__example-demo avatar__example-demo-container">
-        <div class="avatar avatar-xl">
-            <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
-        </div>
-        <div class="avatar avatar-lg">
-            <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
-        </div>
-        <div class="avatar avatar-md">
-            <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
-        </div>
-        <div class="avatar avatar-sm">
-            <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
-        </div>
-        <div class="avatar avatar-xs">
-            <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
+    <div class="container">
+        <div class="component__example-demo avatar__example-demo-container">
+            <div class="avatar avatar-xl">
+                <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
+            </div>
+            <div class="avatar avatar-lg">
+                <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
+            </div>
+            <div class="avatar avatar-md">
+                <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
+            </div>
+            <div class="avatar avatar-sm">
+                <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
+            </div>
+            <div class="avatar avatar-xs">
+                <img class="img-responsive img-round" loading="lazy" src="./src/avatar-img-1.png" alt="avatar">
+            </div>
         </div>
     </div>
+    
 
     <!-- alert component  -->
+    <div class="container">
+        <div class="component-display">
+            <div class="alert alert-primary">Primary alert </div>
+            <div class="alert alert-success">Success alert </div>
+            <div class="alert alert-warning"><span class="alert-icon"><i class="fas fa-exclamation-triangle"></i></span>Warning alert</div>
+            <div class="alert alert-danger"><span class="alert-icon"><i class="fas fa-times-circle"></i></span>Danger alert Red</div>
+            <div class="alert alert-success">
+            <span class="alert-icon"><i class="fas fa-check-circle"></i></span>
+            Success alert with icon.
+            </div>
+      </div>
+    </div>
+    
 
-    <div class="component-display">
-        <div class="alert alert-primary">Primary alert </div>
-        <div class="alert alert-success">Success alert </div>
-        <div class="alert alert-warning"><span class="alert-icon"><i class="fas fa-exclamation-triangle"></i></span>Warning alert</div>
-        <div class="alert alert-danger"><span class="alert-icon"><i class="fas fa-times-circle"></i></span>Danger alert Red</div>
-        <div class="alert alert-success">
-        <span class="alert-icon"><i class="fas fa-check-circle"></i></span>
-        Success alert with icon.
-        </div>
-  </div>
-  
+
+
+  <!-- Button-Image-Input -->
+
+    <!-- Button component starts here -->
+
+    <div class="container__components-holder">
+        <button class="link link-primary">Primary</button>
+        <button class="link link-secondary">Secondary</button>
+        <button class="link-only">Link</button>
+        <span class="link link-icon"><i class="fas fa-atom"></i></span>
+        <button class="floating-action"> + </button>
+    </div>
+
+
+    <!-- Image component starts here -->
+
+    <div class="container">
+        <img class="img-circular" src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="">
+
+    </div>
+
+    <div class="container"> 
+        <img class="responsive-img" src="https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+    </div>
+    
+    <!-- Input component starts here  -->
+    
+
+    <div class="container">
+        <label for="username" class="input-lable">Enter your username:
+            <input class="input-text" type="text" placeholder="Username">
+        </label>
+    </div>
+
+    <div class="container">
+        <label for="username" class="input-lable">Enter your username:
+            <input class="input-text-focused" type="text" placeholder="Please enter username">
+        </label>
+    </div>
+
+    <div class="container">
+        <label for="Username" class="input-lable">Enter your username:
+            <input class="input-text-error" type="text" placeholder="Please enter username">
+            <p class="text-error">Please enter correct input ! </p>
+        </label>
+    </div>
+
+    <div class="container">
+        <label for="search" class="">Enter text to search
+            <input class="input-search" type="text" placeholder="">
+        </label>
+    </div>
+
 </body>
 </html>
