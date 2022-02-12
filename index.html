@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
     <script src="https://kit.fontawesome.com/428bba23b3.js"crossorigin="anonymous"></script>
+    
     <title>Component Library</title>
 </head>
 <body>
@@ -173,42 +174,232 @@
 
     <!-- Image component starts here -->
 
-    <div class="container">
-        <img class="img-circular" src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="">
-
+    <div class="container flex">
+        <div class="container">
+            <img class="img-circular" src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="">
+    
+        </div>
+    
+        <div class="container"> 
+            <img class="responsive-img" src="https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        </div>
     </div>
 
-    <div class="container"> 
-        <img class="responsive-img" src="https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-    </div>
+   
     
     <!-- Input component starts here  -->
+    <div class="container flex">
+        <div class="container">
+            <label for="username" class="input-lable">Enter your username:
+                <input class="input-text" type="text" placeholder="Username">
+            </label>
+        </div>
+    
+        <div class="container">
+            <label for="username" class="input-lable">Enter your username:
+                <input class="input-text-focused" type="text" placeholder="Please enter username">
+            </label>
+        </div>
+    
+        <div class="container">
+            <label for="Username" class="input-lable">Enter your username:
+                <input class="input-text-error" type="text" placeholder="Please enter username">
+                <p class="text-error">Please enter correct input ! </p>
+            </label>
+        </div>
+    
+        <div class="container">
+            <label for="search" class="">Enter text to search
+                <input class="input-search" type="text" placeholder="">
+            </label>
+        </div>
+
+    </div>
     
 
-    <div class="container">
-        <label for="username" class="input-lable">Enter your username:
-            <input class="input-text" type="text" placeholder="Username">
-        </label>
-    </div>
+   
+
+    <!-- snackbar start header -->
 
     <div class="container">
-        <label for="username" class="input-lable">Enter your username:
-            <input class="input-text-focused" type="text" placeholder="Please enter username">
-        </label>
+        <div class="snackbar flex">
+            <section class="snackbar-label">
+              <span>Can't send photo. Retry in 5 seconds.</span>
+            </section>
+            <div class="snackbar-action flex">
+              <span class="snackbar-action-button">Retry</span>
+              <span class="snackbar-action-icon">
+                <i class="fas fa-times"></i>
+              </span>
+            </div>
+          </div>
     </div>
+
+
+    <!-- Text utilities starts here  -->
+
+    <div class="container flex">
+        <div class="container">
+            <p class="h1">This is h1 heading</p>
+        <p class="h2">This is h2 heading</p>
+        <p class="h3">This is h3 heading</p>
+        <p class="h4">This is h4 heading</p>
+        <p class="h5">This is h5 heading</p>
+        <p class="h6">This is h6 heading</p>
+        </div>
+    </div>
+
+    <div class="container flex">
+        <div class="container">
+            <p class="h3">This is h3 heading
+                <small class="blue-color">with blue text</small>
+            </p>
+            <p class="h3">This is h3 heading
+                <small class="green-color">with green text</small>
+            </p>
+            <p class="h3">This is  h3 heading
+                <small class="danger-color">with red text</small>
+            </p>
+            
+            <p class="h3">This is h3 heading
+                <small class="info-color">with info text</small>
+            </p>
+            <p class="h3">This is h3 heading
+                <small class="grey-color">with grey text</small>
+            </p>
+        </div>
+    </div>
+
+    <div class="container flex">
+        <div class="container ">
+            <p class="text-left">This is Left aligned text.</p>
+            <p class="text-center">This is Center aligned text.</p>
+            <p class="text-right">This Right aligned text.</p>
+        </div>
+    </div>
+
+
+    <!-- Lists starts here  -->
 
     <div class="container">
-        <label for="Username" class="input-lable">Enter your username:
-            <input class="input-text-error" type="text" placeholder="Please enter username">
-            <p class="text-error">Please enter correct input ! </p>
-        </label>
+        <div class="container">
+            <h3>List Title</h3>
+            <div class="divider"></div>
+            <ol class="spaced">
+                <li> Item1</li>
+                <li> Item2 </li>
+                <li> Item3</li>
+                <li> Item4</li>
+                <li> Item5</li>
+            </ol>
+        </div>
     </div>
+
 
     <div class="container">
-        <label for="search" class="">Enter text to search
-            <input class="input-search" type="text" placeholder="">
-        </label>
+        <h3>Lists with checkbox</h3>
+        <div class="checkbox">
+            <label for="checkbox-1">
+                <input id="checkbox-1" name="checkbox" type="checkbox" checked>
+                Item1
+            </label>
+            <label for="checkbox-2">
+                <input id="checkbox-2" name="checkbox" type="checkbox">
+                Item2
+            </label>
+            <label for="checkbox-3">
+                <input id="checkbox-3" name="checkbox" type="checkbox">
+                Item3
+            </label>
+            <label for="checkbox-4">
+                <input id="checkbox-4" name="checkbox" type="checkbox">
+                Item4
+            </label>
+        </div>
     </div>
 
+
+
+    <!-- Rating bar starts here  -->
+    
+    <div class="container">
+        <h3> Ratings </h3>
+        <br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+    </div>
+
+
+    <!-- Modal box starts here  -->
+    <div class="container">
+        <button class="trigger modal-btn">Modal Button!</button>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h1>Hello I am Modal box !</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- navigation bar starts here  -->
+    
+        <header class="navigation">
+            <section class="nav-container-startsec">
+                 <span><i class="fas fa-bars fa-lg"></i></span>
+                 <br>
+                 <span class="nav-title"> Zeta Kart</span>
+            </section>
+            <section class="nav-container-endsec">
+                <span><i class="fas fa-bell fa-lg"  style="user-select: auto;"></i></span>
+                <span><i class="fas fa-shopping-cart fa-lg"></i></span>
+                <span><i class="fas fa-user-circle fa-lg"></i></span>
+            </section>
+        </header>
+    
+    
+        <!-- navigation header 2 -->
+       
+            <header class="nav-header">
+                <h1 class="logo"><a href="#">Zeta Kart</a></h1>
+            
+                <div class="header__nav">
+                  <nav>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Orders</a></li>
+                      <li><a href="#">Cart</a></li>
+                    </ul>
+                  </nav>
+                  <a href="#" class="user">
+                    <span>User</span>
+                    <div class="img"></div>
+                  </a>
+                </div>
+              </header>
+
+
+        <!-- Grid starts here  -->
+      
+        <div class="container">
+            <div class="container-grid two-column-grid">
+                <div class="child">Child 1</div>
+                <div class="child">Child 2</div>
+            </div>
+            <br>
+            <br>
+            <div class="container-grid three-column-grid">
+                <div class="child">Child 1</div>
+                <div class="child">Child 2</div>
+                <div class="child">Child 1</div>
+            </div>
+        </div>
+        
+
+
+    <script src="/index.js"></script>
 </body>
 </html>
